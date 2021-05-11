@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Bank Guru">
+    <test verbose="2" name="Run on FIREFOX">
+        <classes>
+            <class name="com.bankguru.user.User_01_New_Customer">
+                <methods>
+                    <include name="New_Customer_01_Validate_Name"/>
+                    <include name="New_Customer_01_Validate_Phone"/>
+                    <include name="New_Customer_01_Validate_City"/>
+                    <include name="New_Customer_01_Validate_State"/>
+                    <include name="New_Customer_01_Validate_Address"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
