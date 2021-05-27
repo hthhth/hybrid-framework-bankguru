@@ -1,10 +1,14 @@
 package com.liveguru.login;
 
+import commons.BaseTest;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.liveGuru.HomePageObject;
 import pageObjects.liveGuru.LoginPageObject;
@@ -13,19 +17,18 @@ import pageObjects.liveGuru.MyDashboardPageObject;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class Level_04_Register_Login_Multiple_Browser {
+public class Level_04_Register_Login_Multiple_Browser extends BaseTest {
     WebDriver driver;
-//    String projectLocation = System.getProperty("user.dir");
     String emailAddress, password;
 
+    @Parameters({"browser", "url"})
     @BeforeClass
-    public void initBrowser(){
-        System.setProperty("webdriver.gecko.driver", "./browserDrivers/geckodriver.exe");
-        driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    public void beforeClass(String browserName, String appURL){
+
+        driver = getBrowserDriver(browserName, appURL);
+
         emailAddress = getRandomEmail();
         password = "123456";
-        driver.get("http://live.demoguru99.com/index.php");
     }
 
     @Test
@@ -90,7 +93,7 @@ public class Level_04_Register_Login_Multiple_Browser {
     }
 
     @AfterClass
-    public void cleanBrowser(){
+    public void afterClass(){
         driver.quit();
     }
 
