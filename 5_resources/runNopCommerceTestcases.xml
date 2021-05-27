@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Nop Commerce">
+    <test name="Run on FIREFOX">
+        <classes>
+            <class name="com.nopcommerce.login.Level_03_Register_Login_Page_Object" />
+        </classes>
+    </test>
+</suite>
