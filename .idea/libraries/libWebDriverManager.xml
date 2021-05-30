@@ -1,12 +1,10 @@
 <component name="libraryTable">
-  <library name="libraries">
+  <library name="libWebDriverManager">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/libraries" />
       <root url="file://$PROJECT_DIR$/libWebDriverManager" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
-    <jarDirectory url="file://$PROJECT_DIR$/libraries" recursive="false" />
     <jarDirectory url="file://$PROJECT_DIR$/libWebDriverManager" recursive="false" />
   </library>
 </component>
