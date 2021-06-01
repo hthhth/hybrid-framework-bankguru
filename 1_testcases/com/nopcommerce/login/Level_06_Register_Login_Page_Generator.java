@@ -9,6 +9,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.nopCommerce.HomePageObject;
 import pageObjects.nopCommerce.LoginPageObject;
+import pageObjects.nopCommerce.PageGeneratorManager;
 import pageObjects.nopCommerce.RegisterPageObject;
 
 import java.util.Random;
@@ -23,7 +24,7 @@ public class Level_06_Register_Login_Page_Generator extends BaseTest {
         driver = getBrowserDriver(browserName, appURL);
         emailAddress = getRandomEmail();
         password = "123456";
-        homePage = new HomePageObject(driver);
+        homePage = PageGeneratorManager.getHomePage(driver);
     }
 
     @Test
