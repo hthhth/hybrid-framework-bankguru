@@ -5,7 +5,7 @@
     <test name="Run on FIREFOX">
         <parameter name="browser" value="firefox" />
         <classes>
-            <class name="com.nopcommerce.login.Level_06_Register_Login_Page_Generator" />
+            <class name="com.nopcommerce.login.Level_07_Register_Login_Page_Switch_Page" />
         </classes>
     </test>
 </suite>
