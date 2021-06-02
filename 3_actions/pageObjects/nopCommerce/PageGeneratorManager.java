@@ -31,7 +31,7 @@ public class PageGeneratorManager {
         }
         return registerPage;
     }
-    public static SearchPageObject getSearchPagePage(WebDriver driver){
+    public static SearchPageObject getSearchPage(WebDriver driver){
         if (searchPage == null){
             searchPage = new SearchPageObject(driver);
         }
