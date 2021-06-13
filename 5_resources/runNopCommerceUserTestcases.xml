@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Nop Commerce">
+<suite name="User - Nop Commerce">
     <parameter name="url" value="https://demo.nopcommerce.com/"></parameter>
     <test name="Run on FIREFOX">
         <parameter name="browser" value="firefox" />
