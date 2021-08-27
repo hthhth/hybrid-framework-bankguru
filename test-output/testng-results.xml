@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:01,109] User_01_Register2 - Step 01: Verify Home Page is displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:01,313]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:01,318] User_01_Register - Step 02: Click to Register link
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:03,238] User_01_Register - Step 03: Click to Male radio button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:03,338] User_01_Register - Step 04: Enter to Firstname textbox
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:03,506] User_01_Register - Step 05: Enter to Lastname textbox
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:03,675] User_01_Register - Step 06: Enter to Email textbox with value testing14739@live.com
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:03,860] User_01_Register - Step 07: Enter to Password textbox with value 123456
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:04,060] User_01_Register - Step 08: Enter to Confirm Password textbox with value 123456
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:04,213] User_01_Register - Step 09: Click to Register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:06,375] User_01_Register - Step 10: Verify success message displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:06,440]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:06,441] User_01_Register - Step 11: Click to Logout  link
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:09,849] User_01_Register - Step 12: Verify Home Page displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:10,035]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:10,320] User_02_Login - Step 01: Click to Login link
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:11,572] User_02_Login - Step 02: Enter to Email textbox with value testing14739@live.com
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:11,738] User_02_Login - Step 03: Enter to Password textbox with value 123456
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:11,887] User_02_Login - Step 04: Click to Login button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:13,576] User_02_Login - Step 05: Verify Home Page displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:13,666]  -------------------------- FAILED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:14,839] OS name = windows 7
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2021-08-27 19:38:14,848] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'ADMIN-PC', ip: '192.168.20.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_281'
+Driver info: driver.version: RemoteWebDriver
+<br>]]>
+    </line>
+  </reporter-output>
+  <suite name="User - Nop Commerce" duration-ms="35627" started-at="2021-08-27T19:37:39 ICT" finished-at="2021-08-27T19:38:14 ICT">
+    <groups>
+    </groups>
+    <test name="Run on Chrome" duration-ms="35627" started-at="2021-08-27T19:37:39 ICT" finished-at="2021-08-27T19:38:14 ICT">
+      <class name="com.nopcommerce.login.Level_13_Register_Login_Log_Allure">
+        <test-method status="PASS" signature="deleteAllFilesInAllureJSON()[pri:0, instance:com.nopcommerce.login.Level_13_Register_Login_Log_Allure@164a62bf]" name="deleteAllFilesInAllureJSON" is-config="true" duration-ms="46" started-at="2021-08-27T19:37:39 ICT" finished-at="2021-08-27T19:37:39 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAllFilesInAllureJSON -->
+        <test-method status="PASS" signature="deleteAllFilesInReportNGScreenshot()[pri:0, instance:com.nopcommerce.login.Level_13_Register_Login_Log_Allure@164a62bf]" name="deleteAllFilesInReportNGScreenshot" is-config="true" duration-ms="2" started-at="2021-08-27T19:37:39 ICT" finished-at="2021-08-27T19:37:39 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAllFilesInReportNGScreenshot -->
+        <test-method status="PASS" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:com.nopcommerce.login.Level_13_Register_Login_Log_Allure@164a62bf]" name="beforeClass" is-config="true" duration-ms="21665" started-at="2021-08-27T19:37:39 ICT" finished-at="2021-08-27T19:38:00 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="User_01_Register_To_System()[pri:0, instance:com.nopcommerce.login.Level_13_Register_Login_Log_Allure@164a62bf]" name="User_01_Register_To_System" duration-ms="9081" started-at="2021-08-27T19:38:00 ICT" finished-at="2021-08-27T19:38:10 ICT">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:01,109] User_01_Register2 - Step 01: Verify Home Page is displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:01,313]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:01,318] User_01_Register - Step 02: Click to Register link
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:03,238] User_01_Register - Step 03: Click to Male radio button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:03,338] User_01_Register - Step 04: Enter to Firstname textbox
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:03,506] User_01_Register - Step 05: Enter to Lastname textbox
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:03,675] User_01_Register - Step 06: Enter to Email textbox with value testing14739@live.com
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:03,860] User_01_Register - Step 07: Enter to Password textbox with value 123456
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:04,060] User_01_Register - Step 08: Enter to Confirm Password textbox with value 123456
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:04,213] User_01_Register - Step 09: Click to Register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:06,375] User_01_Register - Step 10: Verify success message displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:06,440]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:06,441] User_01_Register - Step 11: Click to Logout  link
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:09,849] User_01_Register - Step 12: Verify Home Page displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:10,035]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_01_Register_To_System -->
+        <test-method status="FAIL" signature="User_02_Login_To_System()[pri:0, instance:com.nopcommerce.login.Level_13_Register_Login_Log_Allure@164a62bf]" name="User_02_Login_To_System" duration-ms="3359" started-at="2021-08-27T19:38:10 ICT" finished-at="2021-08-27T19:38:13 ICT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertFalse(Assert.java:67)
+at org.testng.Assert.assertFalse(Assert.java:77)
+at commons.BaseTest.checkFailed(BaseTest.java:110)
+at commons.BaseTest.verifyFalse(BaseTest.java:120)
+at com.nopcommerce.login.Level_13_Register_Login_Log_Allure.User_02_Login_To_System(Level_13_Register_Login_Log_Allure.java:90)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.TestNG.privateMain(TestNG.java:1365)
+at org.testng.TestNG.main(TestNG.java:1329)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:10,320] User_02_Login - Step 01: Click to Login link
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:11,572] User_02_Login - Step 02: Enter to Email textbox with value testing14739@live.com
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:11,738] User_02_Login - Step 03: Enter to Password textbox with value 123456
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:11,887] User_02_Login - Step 04: Click to Login button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:13,576] User_02_Login - Step 05: Verify Home Page displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:13,666]  -------------------------- FAILED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_02_Login_To_System -->
+        <test-method status="PASS" signature="cleanBrowser(java.lang.String)[pri:0, instance:com.nopcommerce.login.Level_13_Register_Login_Log_Allure@164a62bf]" name="cleanBrowser" is-config="true" duration-ms="680" started-at="2021-08-27T19:38:14 ICT" finished-at="2021-08-27T19:38:14 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanBrowser -->
+        <test-method status="PASS" signature="cleanExecutableDriver()[pri:0, instance:com.nopcommerce.login.Level_13_Register_Login_Log_Allure@164a62bf]" name="cleanExecutableDriver" is-config="true" duration-ms="119" started-at="2021-08-27T19:38:14 ICT" finished-at="2021-08-27T19:38:14 ICT">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:14,839] OS name = windows 7
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2021-08-27 19:38:14,848] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'ADMIN-PC', ip: '192.168.20.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_281'
+Driver info: driver.version: RemoteWebDriver
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cleanExecutableDriver -->
+      </class> <!-- com.nopcommerce.login.Level_13_Register_Login_Log_Allure -->
+    </test> <!-- Run on Chrome -->
+  </suite> <!-- User - Nop Commerce -->
+</testng-results>

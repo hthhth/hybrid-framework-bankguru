@@ -2,11 +2,11 @@
   <library name="libraries">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/libraries" />
-      <root url="file://$PROJECT_DIR$/libWebDriverManager" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/testng-7.4.0-sources.jar!/" />
+    </SOURCES>
     <jarDirectory url="file://$PROJECT_DIR$/libraries" recursive="false" />
-    <jarDirectory url="file://$PROJECT_DIR$/libWebDriverManager" recursive="false" />
   </library>
 </component>

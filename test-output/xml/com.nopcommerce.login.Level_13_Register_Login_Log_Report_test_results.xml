@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Firefox"
+           tests="4"
+           failures="2"
+           errors="0"
+           skipped="2"
+           time="102.069">
+  <properties />
+            <testcase name="cleanBrowser" time="102.035" classname="com.nopcommerce.login.Level_13_Register_Login_Log_ReportNG">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+                    <![CDATA[java.lang.NullPointerException
+  commons.BaseTest.cleanBrowserAndDriver(BaseTest.java:146)
+  com.nopcommerce.login.Level_13_Register_Login_Log_ReportNG.cleanBrowser(Level_13_Register_Login_Log_Report_test.java:92)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+  org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+  org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+  org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+  java.util.ArrayList.forEach(ArrayList.java:1259)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+                </failure>
+
+          </testcase>
+            <testcase name="beforeClass" time="0.034" classname="com.nopcommerce.login.Level_13_Register_Login_Log_ReportNG">
+                <failure type="java.lang.AssertionError"
+                  message="expected [true] but found [false]"
+              >
+                    <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:99)
+  org.testng.Assert.failNotEquals(Assert.java:1037)
+  org.testng.Assert.assertTrue(Assert.java:45)
+  org.testng.Assert.assertTrue(Assert.java:55)
+  com.nopcommerce.login.Level_13_Register_Login_Log_ReportNG.beforeClass(Level_13_Register_Login_Log_Report_test.java:26)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+  org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+  org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+  java.util.ArrayList.forEach(ArrayList.java:1259)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+                </failure>
+
+          </testcase>
+  
+            <testcase name="User_01_SaoLaiTheRegister_To_System" time="0.0" classname="com.nopcommerce.login.Level_13_Register_Login_Log_ReportNG">
+          <skipped />
+    </testcase>
+            <testcase name="User_02_Login_To_System" time="0.0" classname="com.nopcommerce.login.Level_13_Register_Login_Log_ReportNG">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

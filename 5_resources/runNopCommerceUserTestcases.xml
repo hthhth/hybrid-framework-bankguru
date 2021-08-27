@@ -2,10 +2,35 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="User - Nop Commerce">
     <parameter name="url" value="https://demo.nopcommerce.com/"></parameter>
-    <test name="Run on FIREFOX">
-        <parameter name="browser" value="firefox" />
+    <listeners>
+<!--        <listener class-name="org.uncommons.reportng.HTMLReporter" />-->
+<!--        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />-->
+        <listener class-name="commons.MethodListener" />
+<!--        <listener class-name="reportConfig.ReportNGListener" />-->
+<!--        <listener class-name="reportConfig.ExtentTestListener" />-->
+        <listener class-name="reportConfig.AllureTestListener" />
+
+    </listeners>
+
+    <test name="Run on Chrome">
+        <parameter name="browser" value="chrome" />
         <classes>
-            <class name="com.nopcommerce.login.Level_08_Register_Login_Page_Dynamic_Locator" />
+            <class name="com.nopcommerce.login.Level_13_Register_Login_Log_Allure" />
         </classes>
     </test>
+
+<!--    <test name="Run on Firefox">-->
+<!--        <parameter name="browser" value="firefox" />-->
+<!--        <classes>-->
+<!--            <class name="com.nopcommerce.login.Level_13_Register_Login_Log_ReportNG" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Run on Edge Chromiun">-->
+<!--        <parameter name="browser" value="EDGE_CHROMIUM" />-->
+<!--        <classes>-->
+<!--            <class name="com.nopcommerce.login.Level_13_Register_Login_Log_ReportNG" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
 </suite>

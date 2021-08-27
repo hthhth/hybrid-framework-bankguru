@@ -7,12 +7,15 @@
       <sourceFolder url="file://$MODULE_DIR$/2_testdata" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/3_actions" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/4_interfaces" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/5_resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/javaTester" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/screenshotImg" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="libraries" level="project" />
     <orderEntry type="library" name="libWebDriverManager" level="project" />
+    <orderEntry type="library" name="libReportNG" level="project" />
+    <orderEntry type="library" name="libAllure" level="project" />
   </component>
 </module>

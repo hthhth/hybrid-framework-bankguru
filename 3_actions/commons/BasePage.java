@@ -11,11 +11,9 @@ import pageObjects.user.nopCommerce.MyAccountPageObject;
 import pageObjects.user.nopCommerce.OrderPageObject;
 import pageObjects.user.nopCommerce.PageGeneratorManager;
 import pageObjects.user.nopCommerce.SearchPageObject;
-import pageUIs.admin.nopCommerce.*;
+import pageUIs.admin.nopCommerce.AdminBasePageUI;
 import pageUIs.user.nopCommerce.UserBasePageUI;
 
-
-import java.io.File;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -41,6 +39,15 @@ public class BasePage {
 
     public String getPageSource(WebDriver driver){
         return driver.getPageSource();
+    }
+    
+    public Set<Cookie> getAllCookies(WebDriver driver){
+        return driver.manage().getCookies();
+    }
+    public void setAllCookies(WebDriver driver, Set<Cookie> allCookies){
+        for (Cookie cookie : allCookies) {
+            driver.manage().addCookie(cookie);
+        }
     }
 
     public Alert waitForAlertPresence(WebDriver driver){
@@ -447,10 +454,8 @@ public class BasePage {
     }
 
     public void waitForElementInvisible(WebDriver driver, String locator){
-        System.out.println("Start waitForElementInvisible: " + new Date().toString());
         explicitWait = new WebDriverWait(driver, shortTimeout);
         explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(locator)));
-        System.out.println("End waitForElementInvisible: " + new Date().toString());
     }
 
     public void waitForElementInvisible(WebDriver driver, String locator, String... params){

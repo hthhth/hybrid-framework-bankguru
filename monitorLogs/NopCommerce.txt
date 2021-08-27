@@ -1,0 +1,26 @@
+[INFO ] [2021-08-27 19:38:01,109] User_01_Register2 - Step 01: Verify Home Page is displayed
+[INFO ] [2021-08-27 19:38:01,313]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-08-27 19:38:01,318] User_01_Register - Step 02: Click to Register link
+[INFO ] [2021-08-27 19:38:03,238] User_01_Register - Step 03: Click to Male radio button
+[INFO ] [2021-08-27 19:38:03,338] User_01_Register - Step 04: Enter to Firstname textbox
+[INFO ] [2021-08-27 19:38:03,506] User_01_Register - Step 05: Enter to Lastname textbox
+[INFO ] [2021-08-27 19:38:03,675] User_01_Register - Step 06: Enter to Email textbox with value testing14739@live.com
+[INFO ] [2021-08-27 19:38:03,860] User_01_Register - Step 07: Enter to Password textbox with value 123456
+[INFO ] [2021-08-27 19:38:04,060] User_01_Register - Step 08: Enter to Confirm Password textbox with value 123456
+[INFO ] [2021-08-27 19:38:04,213] User_01_Register - Step 09: Click to Register button
+[INFO ] [2021-08-27 19:38:06,375] User_01_Register - Step 10: Verify success message displayed
+[INFO ] [2021-08-27 19:38:06,440]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-08-27 19:38:06,441] User_01_Register - Step 11: Click to Logout  link
+[INFO ] [2021-08-27 19:38:09,849] User_01_Register - Step 12: Verify Home Page displayed
+[INFO ] [2021-08-27 19:38:10,035]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-08-27 19:38:10,320] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-27 19:38:11,572] User_02_Login - Step 02: Enter to Email textbox with value testing14739@live.com
+[INFO ] [2021-08-27 19:38:11,738] User_02_Login - Step 03: Enter to Password textbox with value 123456
+[INFO ] [2021-08-27 19:38:11,887] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-27 19:38:13,576] User_02_Login - Step 05: Verify Home Page displayed
+[INFO ] [2021-08-27 19:38:13,666]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-27 19:38:14,839] OS name = windows 7
+[INFO ] [2021-08-27 19:38:14,848] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'ADMIN-PC', ip: '192.168.20.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_281'
+Driver info: driver.version: RemoteWebDriver

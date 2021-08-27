@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [User - Nop Commerce]">
+  <parameter name="url" value="https://demo.nopcommerce.com/"/>
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="reportConfig.AllureTestListener"/>
+  </listeners>
+  <test thread-count="5" name="Run on Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.nopcommerce.login.Level_13_Register_Login_Log_Allure">
+        <methods>
+          <include name="User_02_Login_To_System"/>
+          <include name="cleanExecutableDriver"/>
+          <include name="deleteAllFilesInAllureJSON"/>
+          <include name="beforeClass"/>
+          <include name="deleteAllFilesInReportNGScreenshot"/>
+          <include name="cleanBrowser"/>
+        </methods>
+      </class> <!-- com.nopcommerce.login.Level_13_Register_Login_Log_Allure -->
+    </classes>
+  </test> <!-- Run on Chrome(failed) -->
+</suite> <!-- Failed suite [User - Nop Commerce] -->

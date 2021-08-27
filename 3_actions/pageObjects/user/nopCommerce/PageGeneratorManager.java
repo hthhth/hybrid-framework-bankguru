@@ -16,38 +16,44 @@ public class PageGeneratorManager {
         if (homePage == null){
             homePage = new HomePageObject(driver);
         }
-        return homePage;
+//        return homePage;
+        return new HomePageObject(driver);
     }
 
     public static LoginPageObject getLoginPage(WebDriver driver){
         if (loginPage == null){
             loginPage = new LoginPageObject(driver);
         }
-        return loginPage;
+        return new LoginPageObject(driver);
+//        return loginPage;
     }
     public static RegisterPageObject getRegisterPage(WebDriver driver){
         if (registerPage == null){
             registerPage = new RegisterPageObject(driver);
         }
-        return registerPage;
+        return new RegisterPageObject(driver);
+//        return registerPage;
     }
     public static SearchPageObject getSearchPage(WebDriver driver){
         if (searchPage == null){
             searchPage = new SearchPageObject(driver);
         }
-        return searchPage;
+        return new SearchPageObject(driver);
+//        return searchPage;
     }
     public static MyAccountPageObject getMyAccountPage(WebDriver driver){
         if (myAccountPage == null){
             myAccountPage = new MyAccountPageObject(driver);
         }
-        return myAccountPage;
+        return new MyAccountPageObject(driver);
+//        return myAccountPage;
     }
     public static OrderPageObject getOrderPage(WebDriver driver){
         if (orderPage == null){
             orderPage = new OrderPageObject(driver);
         }
-        return orderPage;
+        return new OrderPageObject(driver);
+//        return orderPage;
     }
 
 }

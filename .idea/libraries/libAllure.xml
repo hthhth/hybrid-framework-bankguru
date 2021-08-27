@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="libAllure">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/libAllure" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/libAllure" recursive="false" />
+  </library>
+</component>

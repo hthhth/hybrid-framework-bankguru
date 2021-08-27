@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-User___Nop_Commerce">
+              <span class="suite-name border-failed">User - Nop Commerce</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-User___Nop_Commerce">
+                    <span>D:\hth\hth\SeleniumOnl\03 - Hybrid Framework\hybrid-framework-bankguru\out\production\hybrid-framework-bankguru\runNopCommerceUserTestcases.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-User___Nop_Commerce">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-User___Nop_Commerce">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-User___Nop_Commerce">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-User___Nop_Commerce">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-User___Nop_Commerce">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-User___Nop_Commerce">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-User___Nop_Commerce" class="hide-methods failed suite-User___Nop_Commerce"> (hide)</a> <!-- hide-methods failed suite-User___Nop_Commerce -->
+                      <a href="#" panel-name="suite-User___Nop_Commerce" class="show-methods failed suite-User___Nop_Commerce"> (show)</a> <!-- show-methods failed suite-User___Nop_Commerce -->
+                    </span>
+                    <div class="method-list-content failed suite-User___Nop_Commerce">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-User___Nop_Commerce" title="com.nopcommerce.login.Level_13_Register_Login_Log_Allure" hash-for-method="User_02_Login_To_System">User_02_Login_To_System</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-User___Nop_Commerce -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-User___Nop_Commerce" class="hide-methods passed suite-User___Nop_Commerce"> (hide)</a> <!-- hide-methods passed suite-User___Nop_Commerce -->
+                      <a href="#" panel-name="suite-User___Nop_Commerce" class="show-methods passed suite-User___Nop_Commerce"> (show)</a> <!-- show-methods passed suite-User___Nop_Commerce -->
+                    </span>
+                    <div class="method-list-content passed suite-User___Nop_Commerce">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-User___Nop_Commerce" title="com.nopcommerce.login.Level_13_Register_Login_Log_Allure" hash-for-method="User_01_Register_To_System">User_01_Register_To_System</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-User___Nop_Commerce -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-User___Nop_Commerce" class="panel User___Nop_Commerce">
+          <div class="suite-User___Nop_Commerce-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.nopcommerce.login.Level_13_Register_Login_Log_Allure</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_02_Login_To_System">
+                  </a> <!-- User_02_Login_To_System -->
+                  <span class="method-name">User_02_Login_To_System</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at commons.BaseTest.checkFailed(BaseTest.java:110)
+	at commons.BaseTest.verifyFalse(BaseTest.java:120)
+	at com.nopcommerce.login.Level_13_Register_Login_Log_Allure.User_02_Login_To_System(Level_13_Register_Login_Log_Allure.java:90)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-User___Nop_Commerce-class-failed -->
+          <div class="suite-User___Nop_Commerce-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nopcommerce.login.Level_13_Register_Login_Log_Allure</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_01_Register_To_System">
+                  </a> <!-- User_01_Register_To_System -->
+                  <span class="method-name">User_01_Register_To_System</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-User___Nop_Commerce-class-passed -->
+        </div> <!-- panel User___Nop_Commerce -->
+        <div panel-name="test-xml-User___Nop_Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\hth\hth\SeleniumOnl\03 - Hybrid Framework\hybrid-framework-bankguru\out\production\hybrid-framework-bankguru\runNopCommerceUserTestcases.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;User - Nop Commerce&quot;&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://demo.nopcommerce.com/&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;commons.MethodListener&quot;/&gt;
+    &lt;listener class-name=&quot;reportConfig.AllureTestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Run on Chrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.nopcommerce.login.Level_13_Register_Login_Log_Allure&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run on Chrome --&gt;
+&lt;/suite&gt; &lt;!-- User - Nop Commerce --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-User___Nop_Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for User - Nop Commerce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Run on Chrome (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-User___Nop_Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for User - Nop Commerce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-User___Nop_Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for User - Nop Commerce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_User___Nop_Commerce');
+function tableData_User___Nop_Commerce() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'User_01_Register_To_System')
+data.setCell(0, 2, 'com.nopcommerce.login.Level_13_Register_Login_Log_Allure')
+data.setCell(0, 3, 9081);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'User_02_Login_To_System')
+data.setCell(1, 2, 'com.nopcommerce.login.Level_13_Register_Login_Log_Allure')
+data.setCell(1, 3, 3359);
+window.suiteTableData['User___Nop_Commerce']= { tableData: data, tableDiv: 'times-div-User___Nop_Commerce'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <div id="times-div-User___Nop_Commerce">
+              </div> <!-- times-div-User___Nop_Commerce -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-User___Nop_Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for User - Nop Commerce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">User_01_Register_To_System</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:01,109] User_01_Register2 - Step 01: Verify Home Page is displayed
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:01,313]  -------------------------- PASSED -------------------------- 
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:01,318] User_01_Register - Step 02: Click to Register link
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:03,238] User_01_Register - Step 03: Click to Male radio button
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:03,338] User_01_Register - Step 04: Enter to Firstname textbox
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:03,506] User_01_Register - Step 05: Enter to Lastname textbox
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:03,675] User_01_Register - Step 06: Enter to Email textbox with value testing14739@live.com
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:03,860] User_01_Register - Step 07: Enter to Password textbox with value 123456
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:04,060] User_01_Register - Step 08: Enter to Confirm Password textbox with value 123456
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:04,213] User_01_Register - Step 09: Click to Register button
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:06,375] User_01_Register - Step 10: Verify success message displayed
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:06,440]  -------------------------- PASSED -------------------------- 
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:06,441] User_01_Register - Step 11: Click to Logout  link
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:09,849] User_01_Register - Step 12: Verify Home Page displayed
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:10,035]  -------------------------- PASSED -------------------------- 
+<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">User_02_Login_To_System</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:10,320] User_02_Login - Step 01: Click to Login link
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:11,572] User_02_Login - Step 02: Enter to Email textbox with value testing14739@live.com
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:11,738] User_02_Login - Step 03: Enter to Password textbox with value 123456
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:11,887] User_02_Login - Step 04: Click to Login button
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:13,576] User_02_Login - Step 05: Verify Home Page displayed
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2021-08-27 19:38:13,666]  -------------------------- FAILED -------------------------- 
+<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-User___Nop_Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-User___Nop_Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nopcommerce.login.Level_13_Register_Login_Log_Allure</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">deleteAllFilesInAllureJSON</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">deleteAllFilesInReportNGScreenshot</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome, https://demo.nopcommerce.com/)</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">User_01_Register_To_System</span>
+                <span class="method-start">21820 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">User_02_Login_To_System</span>
+                <span class="method-start">31174 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanBrowser(chrome)</span>
+                <span class="method-start">34925 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">cleanExecutableDriver</span>
+                <span class="method-start">35703 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
