@@ -15,7 +15,8 @@
     <test name="Run on Chrome">
         <parameter name="browser" value="chrome" />
         <classes>
-            <class name="com.nopcommerce.login.Level_13_Register_Login_Log_Allure" />
+            <class name="com.nopcommerce.login.Level_13_Register_Login_Log_ReportNG" />
+            <class name="com.nopcommerce.login.Level_15_Register_Login_Pattern_Object" />
         </classes>
     </test>
 

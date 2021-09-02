@@ -67,5 +67,4 @@ public class RegisterPageObject extends BasePage {
         return PageGeneratorManager.getHomePage(driver);
     }
 
-
 }
