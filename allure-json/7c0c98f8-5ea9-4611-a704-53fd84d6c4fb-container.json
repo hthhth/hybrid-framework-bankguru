@@ -1,1 +1,0 @@
-{"uuid":"7c0c98f8-5ea9-4611-a704-53fd84d6c4fb","name":"User - Nop Commerce","children":["73fcb634-93ed-4607-bbf1-c0b2fb20c0bd"],"befores":[],"afters":[{"name":"cleanExecutableDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1630217212534,"stop":1630217218974}],"links":[],"start":1630217176654,"stop":1630217218976}

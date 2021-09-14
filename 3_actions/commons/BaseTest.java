@@ -146,7 +146,6 @@ public class BaseTest {
             String osName = System.getProperty("os.name").toLowerCase();
             log.info("OS name = " + osName);
 
-            // Quit driver executable file in Task Manager
             if (driver.toString().toLowerCase().contains("chrome")) {
                 if (osName.contains("windows"))  {
                     cmd = "taskkill /F /FI \"IMAGENAME eq chromedriver*\"";

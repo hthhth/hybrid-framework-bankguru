@@ -10,6 +10,9 @@
       <sourceFolder url="file://$MODULE_DIR$/javaTester" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/screenshotImg" />
+      <excludeFolder url="file://$MODULE_DIR$/test-output" />
+      <excludeFolder url="file://$MODULE_DIR$/monitorLogs" />
+      <excludeFolder url="file://$MODULE_DIR$/extentReport" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
