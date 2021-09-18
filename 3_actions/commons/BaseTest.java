@@ -87,7 +87,6 @@ public class BaseTest {
             Assert.assertTrue(condition);
         } catch (Throwable e) {
             pass = false;
-
             // Add lỗi vào ReportNG
             VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
             Reporter.getCurrentTestResult().setThrowable(e);

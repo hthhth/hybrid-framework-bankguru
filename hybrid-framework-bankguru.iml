@@ -20,5 +20,6 @@
     <orderEntry type="library" name="libWebDriverManager" level="project" />
     <orderEntry type="library" name="libReportNG" level="project" />
     <orderEntry type="library" name="libAllure" level="project" />
+    <orderEntry type="library" name="libFaker" level="project" />
   </component>
 </module>

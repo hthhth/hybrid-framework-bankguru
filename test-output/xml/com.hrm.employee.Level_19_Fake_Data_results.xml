@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Chrome"
+           tests="10"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="26.593">
+  <properties />
+  
+  
+            <testcase name="Employee_02_Upload_Avatar" time="7.620" classname="com.hrm.employee.Level_19_Fake_Data" />
+                <testcase name="Employee_11_Search_Employee" time="0.003" classname="com.hrm.employee.Level_19_Fake_Data" />
+                <testcase name="Employee_01_Add_New_Employee" time="12.318" classname="com.hrm.employee.Level_19_Fake_Data" />
+                <testcase name="Employee_07_Edit_View_Job" time="0.003" classname="com.hrm.employee.Level_19_Fake_Data" />
+                <testcase name="Employee_10_Qualifications" time="0.002" classname="com.hrm.employee.Level_19_Fake_Data" />
+                <testcase name="Employee_03_Personal_Details" time="6.631" classname="com.hrm.employee.Level_19_Fake_Data" />
+                <testcase name="Employee_05_Emergency_Details" time="0.009" classname="com.hrm.employee.Level_19_Fake_Data" />
+                <testcase name="Employee_09_Edit_View_Tax" time="0.003" classname="com.hrm.employee.Level_19_Fake_Data" />
+                <testcase name="Employee_06_Assigned_Dependents" time="0.002" classname="com.hrm.employee.Level_19_Fake_Data" />
+                <testcase name="Employee_08_Edit_View_Salary" time="0.002" classname="com.hrm.employee.Level_19_Fake_Data" />
+      
+</testsuite>
