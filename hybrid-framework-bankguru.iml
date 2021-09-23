@@ -21,5 +21,6 @@
     <orderEntry type="library" name="libReportNG" level="project" />
     <orderEntry type="library" name="libAllure" level="project" />
     <orderEntry type="library" name="libFaker" level="project" />
+    <orderEntry type="library" name="libJackson" level="project" />
   </component>
 </module>

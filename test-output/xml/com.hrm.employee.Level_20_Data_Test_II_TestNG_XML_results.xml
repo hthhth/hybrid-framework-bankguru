@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Chrome"
+           tests="10"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="29.659">
+  <properties />
+  
+  
+            <testcase name="Employee_06_Assigned_Dependents" time="0.003" classname="com.hrm.employee.Level_20_Data_Test_II_TestNG_XML" />
+                <testcase name="Employee_10_Qualifications" time="0.006" classname="com.hrm.employee.Level_20_Data_Test_II_TestNG_XML" />
+                <testcase name="Employee_03_Personal_Details" time="8.156" classname="com.hrm.employee.Level_20_Data_Test_II_TestNG_XML" />
+                <testcase name="Employee_09_Edit_View_Tax" time="0.006" classname="com.hrm.employee.Level_20_Data_Test_II_TestNG_XML" />
+                <testcase name="Employee_08_Edit_View_Salary" time="0.008" classname="com.hrm.employee.Level_20_Data_Test_II_TestNG_XML" />
+                <testcase name="Employee_07_Edit_View_Job" time="0.003" classname="com.hrm.employee.Level_20_Data_Test_II_TestNG_XML" />
+                <testcase name="Employee_05_Emergency_Details" time="0.006" classname="com.hrm.employee.Level_20_Data_Test_II_TestNG_XML" />
+                <testcase name="Employee_02_Upload_Avatar" time="8.502" classname="com.hrm.employee.Level_20_Data_Test_II_TestNG_XML" />
+                <testcase name="Employee_11_Search_Employee" time="0.004" classname="com.hrm.employee.Level_20_Data_Test_II_TestNG_XML" />
+                <testcase name="Employee_01_Add_New_Employee" time="12.965" classname="com.hrm.employee.Level_20_Data_Test_II_TestNG_XML" />
+      
+</testsuite>
