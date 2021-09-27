@@ -154,11 +154,21 @@ public class BasePage {
     }
 
     public void clickToElement(WebDriver driver, String locator){
-        getElement(driver, locator).click();
+        if (driver.toString().contains("internet explorer")) {
+            clickToElementByJS(driver, locator);
+            sleepInSeconds(2);
+        } else {
+            getElement(driver, locator).click();
+        }
     }
 
     public void clickToElement(WebDriver driver, String locator, String... params){
-        getElement(driver, getDynamicLocator(locator, params)).click();
+        if (driver.toString().contains("internet explorer")) {
+            clickToElementByJS(driver, getDynamicLocator(locator, params));
+            sleepInSeconds(2);
+        } else {
+            getElement(driver, getDynamicLocator(locator, params)).click();
+        }
     }
     public void sendKeyToElement(WebDriver driver, String locator, String value){
         getElement(driver, locator).clear();
@@ -608,12 +618,24 @@ public class BasePage {
     // HRM - SubMenu
     public void openSubMenuPage(WebDriver driver, String menuPageName, String subMenuPageName){
         waitForElementClickable(driver, BasePageUI.MENU_BY_PAGE_NAME, menuPageName);
-        clickToElement(driver, BasePageUI.MENU_BY_PAGE_NAME, menuPageName);
+        if (driver.toString().contains("internet explorer")) {
+            openPageURL(driver, getElementAttribute(driver, BasePageUI.MENU_BY_PAGE_NAME, "href", menuPageName));
+        } else {
+            clickToElement(driver, BasePageUI.MENU_BY_PAGE_NAME, menuPageName);
+        }
 
         waitForElementClickable(driver, BasePageUI.MENU_BY_PAGE_NAME, subMenuPageName);
-        clickToElement(driver, BasePageUI.MENU_BY_PAGE_NAME, subMenuPageName);
+        if (driver.toString().contains("internet explorer")) {
+            openPageURL(driver, getElementAttribute(driver, BasePageUI.MENU_BY_PAGE_NAME, "href", subMenuPageName));
+        } else {
+            clickToElement(driver, BasePageUI.MENU_BY_PAGE_NAME, subMenuPageName);
+        }
 
         isJQueryAJAXLoadedSuccess(driver);
+
+        if (driver.toString().contains("internet explorer")){
+            sleepInSeconds(3);
+        }
     }
 
     // HRM - ChildSubMenu
@@ -628,12 +650,19 @@ public class BasePage {
         clickToElement(driver, BasePageUI.MENU_BY_PAGE_NAME, childSubMenuPageName);
 
         isJQueryAJAXLoadedSuccess(driver);
+
+        if (driver.toString().contains("internet explorer")){
+            sleepInSeconds(3);
+        }
     }
 
     // HRM - Button component
     public void clickToButtonByID(WebDriver driver, String buttonIDName){
         waitForElementClickable(driver, BasePageUI.BUTTON_BY_ID, buttonIDName);
         clickToElement(driver, BasePageUI.BUTTON_BY_ID, buttonIDName);
+        if (driver.toString().contains("internet explorer")){
+            sleepInSeconds(3);
+        }
     }
     // HRM - Textbox component
     public void enterToTextboxByID_HRM(WebDriver driver, String textBoxIDName, String value){
@@ -711,6 +740,9 @@ public class BasePage {
         sendKeyToElement(driver, BasePageUI.USER_LOGIN_TEXTBOX, userName);
         sendKeyToElement(driver, BasePageUI.PASSWORD_LOGIN_TEXTBOX, password);
         clickToElement(driver, BasePageUI.LOGIN_BUTTON);
+        if (driver.toString().contains("internet explorer")){
+            sleepInSeconds(3);
+        }
         return PageGenerator.getDashboardPage(driver);
     }
 

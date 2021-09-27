@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Run on Firefox"
+<testsuite name="Run on IE"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="3.598">
+           time="37.749">
   <properties />
   
   
-            <testcase name="Employee_01_Add_New_Employee" time="3.598" classname="com.hrm.employee.Level_16_Live_Coding" />
+            <testcase name="Employee_01_Add_New_Employee" time="37.749" classname="com.hrm.employee.Level_16_Live_Coding" />
       
 </testsuite>

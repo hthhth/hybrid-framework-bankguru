@@ -29,7 +29,7 @@ public class Level_16_Live_Coding extends BaseTest {
         adminPassword = "admin123";
 
         statusValue = "Enabled";
-        empFirstName = "Harryy";
+        empFirstName = "Harry";
         empLastName = "Kane";
         empUserName = empFirstName + empLastName;
         empPassword = "12345678";
@@ -53,56 +53,56 @@ public class Level_16_Live_Coding extends BaseTest {
         showBrowserConsoleLogs(driver);
         employeeListPage = PageGenerator.getEmployeeListPage(driver);
 
-//        log.info("Add_New_01 - Step 02: Click to 'Add' button");
-//        employeeListPage.clickToButtonByID(driver, "btnAdd");
-//        addEmployeePage = PageGenerator.getAddEmployeePage(driver);
+        log.info("Add_New_01 - Step 02: Click to 'Add' button");
+        employeeListPage.clickToButtonByID(driver, "btnAdd");
+        addEmployeePage = PageGenerator.getAddEmployeePage(driver);
+
+        log.info("Add_New_01 - Step 03: Enter valid info to 'First Name' textbox");
+        addEmployeePage.enterToTextboxByID_HRM(driver, "firstName", empFirstName);
+
+        log.info("Add_New_01 - Step 04: Enter valid info to 'Last Name' textbox");
+        addEmployeePage.enterToTextboxByID_HRM(driver, "lastName", empLastName);
+
+        log.info("Add_New_01 - Step 05: Get value of 'Employee ID'");
+        employeeID = addEmployeePage.getTextboxValueByID(driver, "employeeId");
+
+        log.info("Add_New_01 - Step 06: Click to 'Create Login Details' checkbox");
+        addEmployeePage.clickToCheckboxByLabel(driver, "Create Login Details");
+
+        log.info("Add_New_01 - Step 07: Enter valid info to 'User Name' textbox");
+        addEmployeePage.enterToTextboxByID_HRM(driver, "user_name", empUserName);
+
+        log.info("Add_New_01 - Step 08: Enter valid info to 'Password' textbox");
+        addEmployeePage.enterToTextboxByID_HRM(driver, "user_password", empPassword);
+
+        log.info("Add_New_01 - Step 09: Enter valid info to 'Confirm Password' textbox");
+        addEmployeePage.enterToTextboxByID_HRM(driver, "re_password", empPassword);
+
+        log.info("Add_New_01 - Step 10: Select '" + statusValue + "' value in 'Status' dropdown");
+        addEmployeePage.selectItemInDropdownByID(driver, "status", statusValue);
 //
-//        log.info("Add_New_01 - Step 03: Enter valid info to 'First Name' textbox");
-//        addEmployeePage.enterToTextboxByID_HRM(driver, "firstName", empFirstName);
-//
-//        log.info("Add_New_01 - Step 04: Enter valid info to 'Last Name' textbox");
-//        addEmployeePage.enterToTextboxByID_HRM(driver, "lastName", empLastName);
-//
-//        log.info("Add_New_01 - Step 05: Get value of 'Employee ID'");
-//        employeeID = addEmployeePage.getTextboxValueByID(driver, "employeeId");
-//
-//        log.info("Add_New_01 - Step 06: Click to 'Create Login Details' checkbox");
-//        addEmployeePage.clickToCheckboxByLabel(driver, "Create Login Details");
-//
-//        log.info("Add_New_01 - Step 07: Enter valid info to 'User Name' textbox");
-//        addEmployeePage.enterToTextboxByID_HRM(driver, "user_name", empUserName);
-//
-//        log.info("Add_New_01 - Step 08: Enter valid info to 'Password' textbox");
-//        addEmployeePage.enterToTextboxByID_HRM(driver, "user_password", empPassword);
-//
-//        log.info("Add_New_01 - Step 09: Enter valid info to 'Confirm Password' textbox");
-//        addEmployeePage.enterToTextboxByID_HRM(driver, "re_password", empPassword);
-//
-//        log.info("Add_New_01 - Step 10: Select '" + statusValue + "' value in 'Status' dropdown");
-//        addEmployeePage.selectItemInDropdownByID(driver, "status", statusValue);
-//
-//        log.info("Add_New_01 - Step 11: Click to 'Save' button");
-//        addEmployeePage.clickToButtonByID(driver, "btnSave");
-//        myInfoPage = PageGenerator.getMyInfoPage(driver);
-//
-//        log.info("Add_New_01 - Step 12: Open 'Employee List' page");
-//        myInfoPage.openSubMenuPage(driver, "PIM", "Employee List");
-//        employeeListPage = PageGenerator.getEmployeeListPage(driver);
-////        employeeListPage.waitForElementInvisible(driver, EmployeeListPageUI.LOADING_ICON);
-//        verifyTrue(employeeListPage.isJQueryAJAXLoadedSuccess(driver));
-//
-//        log.info("Add_New_01 - Step 13: Enter valid info to 'Employee Name' textbox");
-//        employeeListPage.enterToTextboxByID_HRM(driver, "empsearch_employee_name_empName", empFullName);
-//
-//        log.info("Add_New_01 - Step 14: Click to 'Search' button");
-//        employeeListPage.clickToButtonByID(driver, "searchBtn");
-////        employeeListPage.waitForElementInvisible(driver, EmployeeListPageUI.LOADING_ICON);
-//        verifyTrue(employeeListPage.isJQueryAJAXLoadedSuccess(driver));
-//
-//        log.info("Add_New_01 - Step 15: Verify Employee Information displayed at 'Result Table'");
-//        verifyEquals(employeeListPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "resultTable", "Id", "1"), employeeID);
-//        verifyEquals(employeeListPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "resultTable", "First (& Middle) Name", "1"), empFirstName);
-//        verifyEquals(employeeListPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "resultTable", "Last Name", "1"), empLastName);
+        log.info("Add_New_01 - Step 11: Click to 'Save' button");
+        addEmployeePage.clickToButtonByID(driver, "btnSave");
+        myInfoPage = PageGenerator.getMyInfoPage(driver);
+
+        log.info("Add_New_01 - Step 12: Open 'Employee List' page");
+        myInfoPage.openSubMenuPage(driver, "PIM", "Employee List");
+        employeeListPage = PageGenerator.getEmployeeListPage(driver);
+//        employeeListPage.waitForElementInvisible(driver, EmployeeListPageUI.LOADING_ICON);
+        verifyTrue(employeeListPage.isJQueryAJAXLoadedSuccess(driver));
+
+        log.info("Add_New_01 - Step 13: Enter valid info to 'Employee Name' textbox");
+        employeeListPage.enterToTextboxByID_HRM(driver, "empsearch_employee_name_empName", empFullName);
+
+        log.info("Add_New_01 - Step 14: Click to 'Search' button");
+        employeeListPage.clickToButtonByID(driver, "searchBtn");
+//        employeeListPage.waitForElementInvisible(driver, EmployeeListPageUI.LOADING_ICON);
+        verifyTrue(employeeListPage.isJQueryAJAXLoadedSuccess(driver));
+
+        log.info("Add_New_01 - Step 15: Verify Employee Information displayed at 'Result Table'");
+        verifyEquals(employeeListPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "resultTable", "Id", "1"), employeeID);
+        verifyEquals(employeeListPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "resultTable", "First (& Middle) Name", "1"), empFirstName);
+        verifyEquals(employeeListPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "resultTable", "Last Name", "1"), empLastName);
 
     }
 

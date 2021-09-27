@@ -13,12 +13,12 @@
 
     </listeners>
 
-    <test name="Run on Firefox">
-        <parameter name="browser" value="firefox" />
-        <classes>
-            <class name="com.hrm.employee.Level_16_Live_Coding" />
-        </classes>
-    </test>
+<!--    <test name="Run on Firefox">-->
+<!--        <parameter name="browser" value="firefox" />-->
+<!--        <classes>-->
+<!--            <class name="com.hrm.employee.Level_16_Live_Coding" />-->
+<!--        </classes>-->
+<!--    </test>-->
 
 <!--    <test name="Run on Chrome">-->
 <!--        <parameter name="browser" value="chrome" />-->
@@ -26,5 +26,12 @@
 <!--            <class name="com.hrm.employee.Level_16_Live_Coding" />-->
 <!--        </classes>-->
 <!--    </test>-->
+
+    <test name="Run on IE">
+        <parameter name="browser" value="ie" />
+        <classes>
+            <class name="com.hrm.employee.Level_16_Live_Coding" />
+        </classes>
+    </test>
 
 </suite>

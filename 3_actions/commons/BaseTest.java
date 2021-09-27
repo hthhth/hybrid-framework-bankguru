@@ -9,8 +9,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -31,7 +33,7 @@ public class BaseTest {
     }
 
     private enum BROWSER {
-        CHROME, FIREFOX, IE, SAFARI, EDGE_LEGACY, EDGE_CHROMIUM, H_CHROME, H_FIREFOX;
+        CHROME, FIREFOX, IE, SAFARI, EDGE_LEGACY, EDGE_CHROMIUM, H_CHROME, H_FIREFOX, COC_COC, OPERA;
     }
 
     private String osName = System.getProperty("os.name");
@@ -56,28 +58,42 @@ public class BaseTest {
     protected WebDriver getBrowserDriver(String browserName, String appURL){
         BROWSER browser = BROWSER.valueOf(browserName.toUpperCase());
         if (browser == BROWSER.FIREFOX) {
-//            WebDriverManager.firefoxdriver().setup();
-            System.setProperty("webdriver.gecko.driver", "./browserDrivers/geckodriver.exe");
-            FirefoxOptions options = new FirefoxOptions();
-            options.addPreference("intl.accept_languages", "en-US, en, en-US, en");
-            options.addArguments("--private");
-            driver = new FirefoxDriver(options);
+            WebDriverManager.firefoxdriver().setup();
+            driver = new FirefoxDriver();
         } else if (browser == BROWSER.CHROME) {
             WebDriverManager.chromedriver().setup();
 
             ChromeOptions options = new ChromeOptions();
             options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 //            options.setExperimentalOption("useAutomationExtension", false);
+
             Map<String, Object> prefs = new HashMap<String, Object>();
             prefs.put("credentials_enable_service", false);
             prefs.put("profile.password_manager_enabled", false);
             options.setExperimentalOption("prefs", prefs);
-            options.addArguments("--incognito");
-            driver = new ChromeDriver(options);
 
+            driver = new ChromeDriver(options);
         } else if (browser == BROWSER.EDGE_CHROMIUM) {
             WebDriverManager.edgedriver().setup();
             driver = new EdgeDriver();
+
+        } else if (browser == BROWSER.EDGE_LEGACY) {
+            driver = new EdgeDriver();
+
+        } else if (browser == BROWSER.COC_COC) {
+            WebDriverManager.chromedriver().driverVersion("91.0.4472.101").setup();
+            ChromeOptions options = new ChromeOptions();
+            options.setBinary("C:\\Program Files(x86)\\CocCoc\\Browser\\Application\\browser.exe");
+            driver = new ChromeDriver(options);
+
+        } else if (browser == BROWSER.OPERA) {
+            WebDriverManager.operadriver().setup();
+            driver = new OperaDriver();
+
+        }
+        else if (browser == BROWSER.IE) {
+            WebDriverManager.iedriver().arch32().driverVersion("3.141.59").setup();
+            driver = new InternetExplorerDriver();
 
         } else if (browser == BROWSER.SAFARI) {
             driver = new SafariDriver();
@@ -207,6 +223,12 @@ public class BaseTest {
                     cmd = "taskkill /F /FI \"IMAGENAME eq msedgedriver*\"";
                 } else {
                     cmd = "pkill msedgedriver";
+                }
+            }  else if (driver.toString().toLowerCase().contains("opera")) {
+                if (osName.contains("windows")) {
+                    cmd = "taskkill /F /FI \"IMAGENAME eq operadriver*\"";
+                } else {
+                    cmd = "pkill operadriver";
                 }
             }
             if (driver != null){
