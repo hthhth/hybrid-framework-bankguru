@@ -3,23 +3,6 @@
 <suite name="HRM">
     <parameter name="url" value="https://opensource-demo.orangehrmlive.com/" />
 
-<!--    <parameter name="adminUserName" value="Admin" />-->
-<!--    <parameter name="adminPassword" value="admin123" />-->
-
-<!--    <parameter name="empFirstName" value="Harry" />-->
-<!--    <parameter name="empLastName" value="Kane" />-->
-<!--    <parameter name="empUserName" value="harrykane" />-->
-<!--    <parameter name="empPassword" value="12345678" />-->
-<!--    <parameter name="empFullName" value="Harry Kane" />-->
-<!--    <parameter name="statusValue" value="Enabled" />-->
-
-<!--    <parameter name="editEmpFirstName" value="Jerry" />-->
-<!--    <parameter name="editEmpLastName" value="Shaw" />-->
-<!--    <parameter name="editEmpGender" value="Male" />-->
-<!--    <parameter name="editEmpMaritalStatus" value="Single" />-->
-<!--    <parameter name="editEmpNationality" value="Vietnamese" />-->
-
-
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter" />
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
@@ -30,18 +13,18 @@
 
     </listeners>
 
-<!--    <test name="Run on Firefox">-->
-<!--        <parameter name="browser" value="firefox" />-->
-<!--        <classes>-->
-<!--            <class name="com.hrm.employee.Level_19_Fake_Data" />-->
-<!--        </classes>-->
-<!--    </test>-->
-
-    <test name="Run on Chrome">
-        <parameter name="browser" value="chrome" />
+    <test name="Run on Firefox">
+        <parameter name="browser" value="firefox" />
         <classes>
-            <class name="com.hrm.employee.Level_20_Data_Test_IV_Data_Driven" />
+            <class name="com.hrm.employee.Level_16_Live_Coding" />
         </classes>
     </test>
+
+<!--    <test name="Run on Chrome">-->
+<!--        <parameter name="browser" value="chrome" />-->
+<!--        <classes>-->
+<!--            <class name="com.hrm.employee.Level_16_Live_Coding" />-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>

@@ -5,8 +5,13 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
@@ -14,7 +19,7 @@ import org.testng.annotations.BeforeTest;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -51,17 +56,50 @@ public class BaseTest {
     protected WebDriver getBrowserDriver(String browserName, String appURL){
         BROWSER browser = BROWSER.valueOf(browserName.toUpperCase());
         if (browser == BROWSER.FIREFOX) {
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
+//            WebDriverManager.firefoxdriver().setup();
+            System.setProperty("webdriver.gecko.driver", "./browserDrivers/geckodriver.exe");
+            FirefoxOptions options = new FirefoxOptions();
+            options.addPreference("intl.accept_languages", "en-US, en, en-US, en");
+            options.addArguments("--private");
+            driver = new FirefoxDriver(options);
         } else if (browser == BROWSER.CHROME) {
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+
+            ChromeOptions options = new ChromeOptions();
+            options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+//            options.setExperimentalOption("useAutomationExtension", false);
+            Map<String, Object> prefs = new HashMap<String, Object>();
+            prefs.put("credentials_enable_service", false);
+            prefs.put("profile.password_manager_enabled", false);
+            options.setExperimentalOption("prefs", prefs);
+            options.addArguments("--incognito");
+            driver = new ChromeDriver(options);
+
         } else if (browser == BROWSER.EDGE_CHROMIUM) {
             WebDriverManager.edgedriver().setup();
             driver = new EdgeDriver();
+
+        } else if (browser == BROWSER.SAFARI) {
+            driver = new SafariDriver();
+
+        } else if (browser == BROWSER.H_CHROME) {
+            WebDriverManager.chromedriver().setup();
+            ChromeOptions options = new ChromeOptions();
+            options.setHeadless(true);
+            options.addArguments("window-size=1366x768");
+            driver = new ChromeDriver(options);
+
+        } else if (browser == BROWSER.H_FIREFOX) {
+            WebDriverManager.firefoxdriver().setup();
+            FirefoxOptions options = new FirefoxOptions();
+            options.setHeadless(true);
+            options.addArguments("window-size=1366x768");
+            driver = new FirefoxDriver(options);
+
         } else {
             throw new RuntimeException("Please enter correct browser name!");
         }
+
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(appURL);
@@ -219,5 +257,13 @@ public class BaseTest {
         }
     }
 
-
+    protected void showBrowserConsoleLogs(WebDriver driver){
+        if (driver.toString().contains("chrome")){
+            LogEntries logs = driver.manage().logs().get("browser");
+            List<LogEntry> logList = logs.getAll();
+            for (LogEntry logging : logList){
+                log.info("-------------" + logging.getLevel().toString() + "-------------\n" + logging.getMessage());
+            }
+        }
+    }
 }
