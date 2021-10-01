@@ -36,6 +36,10 @@ public class BaseTest {
         CHROME, FIREFOX, IE, SAFARI, EDGE_LEGACY, EDGE_CHROMIUM, H_CHROME, H_FIREFOX, COC_COC, OPERA;
     }
 
+    private enum ENVIRONMENT {
+        DEV, TESTING, STAGING, PRODUCTION;
+    }
+
     private String osName = System.getProperty("os.name");
 
     protected WebDriver getBrowserDriver(String browserName){
@@ -66,6 +70,7 @@ public class BaseTest {
             ChromeOptions options = new ChromeOptions();
             options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 //            options.setExperimentalOption("useAutomationExtension", false);
+//            options.addExtensions(new File(GlobalConstants.PROJECT_PATH + "/browserExtensions/extension_1_6_0_0.crx"));
 
             Map<String, Object> prefs = new HashMap<String, Object>();
             prefs.put("credentials_enable_service", false);
@@ -118,8 +123,25 @@ public class BaseTest {
 
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get(appURL);
+        driver.get(getEnvironmentValue(appURL));
         return driver;
+    }
+
+    private String getEnvironmentValue(String environmentName) {
+        ENVIRONMENT environment = ENVIRONMENT.valueOf(environmentName.toUpperCase());
+        String envUrl;
+        if (environment == ENVIRONMENT.DEV) {
+            envUrl = "http://demo.guru99.com/v1/";
+        } else if (environment == ENVIRONMENT.TESTING) {
+            envUrl = "http://demo.guru99.com/v2/";
+        } else if (environment == ENVIRONMENT.STAGING) {
+            envUrl = "http://demo.guru99.com/v3/";
+        } else if (environment == ENVIRONMENT.PRODUCTION) {
+            envUrl = "http://demo.guru99.com/v4/";
+        } else {
+            throw new RuntimeException("Please enter correct environment name!");
+        }
+        return envUrl;
     }
 
     public WebDriver getWebDriver(){

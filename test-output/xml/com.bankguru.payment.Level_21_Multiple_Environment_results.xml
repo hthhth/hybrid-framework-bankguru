@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on CHROME"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.142">
+  <properties />
+  
+  
+            <testcase name="Employee_01_Add_New_Employee" time="0.142" classname="com.bankguru.payment.Level_21_Multiple_Environment" />
+      
+</testsuite>
