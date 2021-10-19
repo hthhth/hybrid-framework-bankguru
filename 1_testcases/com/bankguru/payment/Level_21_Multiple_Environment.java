@@ -13,10 +13,10 @@ public class Level_21_Multiple_Environment extends BaseTest {
     WebDriver driver;
     Environment environment;
 
-    @Parameters({"browser"})
+    @Parameters({"browser", "url"})
     @BeforeClass
-    public void beforeClass(String browserName) {
-//        ConfigFactory.setProperty("env", appUrl);
+    public void beforeClass(String browserName, String appUrl) {
+        ConfigFactory.setProperty("env", appUrl);
 
         environment = ConfigFactory.create(Environment.class);
 

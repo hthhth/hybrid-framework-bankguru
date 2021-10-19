@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.054">
+           time="0.051">
   <properties />
   
   
-            <testcase name="Employee_01_Add_New_Employee" time="0.054" classname="com.bankguru.payment.Level_21_Multiple_Environment" />
+            <testcase name="Employee_01_Add_New_Employee" time="0.051" classname="com.bankguru.payment.Level_21_Multiple_Environment" />
       
 </testsuite>
