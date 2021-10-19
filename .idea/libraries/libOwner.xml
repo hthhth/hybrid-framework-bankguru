@@ -4,7 +4,9 @@
       <root url="file://$PROJECT_DIR$/libOwner" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/owner-1.0.10-sources.jar!/" />
+    </SOURCES>
     <jarDirectory url="file://$PROJECT_DIR$/libOwner" recursive="false" />
   </library>
 </component>

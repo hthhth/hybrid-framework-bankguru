@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/4_interfaces" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/javaTester" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/5_resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/TestResource" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/screenshotImg" />
       <excludeFolder url="file://$MODULE_DIR$/test-output" />
       <excludeFolder url="file://$MODULE_DIR$/monitorLogs" />

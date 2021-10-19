@@ -1,10 +1,10 @@
 package environmentConfig;
 
+import org.aeonbits.owner.Config;
 import org.aeonbits.owner.Config.Sources;
-import org.aeonbits.owner.Config.Key;
 
 @Sources({"classpath:dev.properties"})
-public interface Environment {
+public interface Environment extends Config {
 
     @Key("app.url")
     String appUrl();
@@ -14,5 +14,4 @@ public interface Environment {
 
     @Key("app.password")
     String appPassword();
-
 }
