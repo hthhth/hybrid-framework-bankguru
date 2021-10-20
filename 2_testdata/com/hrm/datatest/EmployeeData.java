@@ -13,7 +13,7 @@ public class EmployeeData {
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-            return mapper.readValue(new File(GlobalConstants.PROJECT_PATH + "/2_testdata/com/hrm/datatest/Employee.json)"), EmployeeData.class);
+            return mapper.readValue(new File(GlobalConstants.PROJECT_PATH + "/2_testdata/com/hrm/datatest/Employee.json"), EmployeeData.class);
         } catch (IOException e) {
             e.printStackTrace();
             return null;
@@ -26,14 +26,14 @@ public class EmployeeData {
     @JsonProperty("lastname")
     private String lastname;
 
+    @JsonProperty("fullname")
+    private String fullname;
+
     @JsonProperty("username")
     private String username;
 
     @JsonProperty("password")
     private String password;
-
-    @JsonProperty("fullname")
-    private String fullname;
 
     public String getFirstname() {
         return firstname;
@@ -43,16 +43,16 @@ public class EmployeeData {
         return lastname;
     }
 
+    public String getFullname() {
+        return fullname;
+    }
+
     public String getUsername() {
         return username;
     }
 
     public String getPassword() {
         return password;
-    }
-
-    public String getFullname() {
-        return fullname;
     }
 
     @JsonProperty("ContactDetails")
@@ -64,14 +64,13 @@ public class EmployeeData {
 
         @JsonProperty("editLastName")
         private String editLastName;
-
     }
+
     public String getEditFirstName(){
         return contactDetails.editFirstName;
     }
 
     public String getEditLastName(){
-        return contactDetails.editFirstName;
+        return contactDetails.editLastName;
     }
-
 }

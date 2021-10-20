@@ -32,10 +32,6 @@ public class Level_20_Data_Test_IV_Data_Driven extends BaseTest {
 
         statusValue = "Enabled";
 
-        editEmpGender = "Male";
-        editEmpMaritalStatus = "Single";
-        editEmpNationality = "Vietnamese";
-
         log.info("Pre-Condition - Step 02: Login with Admin role");
         dashboardPage = loginPage.loginToSystem(driver, adminUserName, adminPassword);
     }
@@ -166,15 +162,15 @@ public class Level_20_Data_Test_IV_Data_Driven extends BaseTest {
         log.info("Personal_Details_03 - Step 10: Enter new value to 'Last Name' textbox");
         myInfoPage.enterToTextboxByID_HRM(driver, "personal_txtEmpLastName", employeeData.getEditLastName());
 
-        log.info("Personal_Details_03 - Step 11: Select new value in 'Gender' radio button");
-        myInfoPage.clickToRadioByLabel(driver, editEmpGender);
-
-        log.info("Personal_Details_03 - Step 12: Select new value in 'Marital Status' dropdown");
-        myInfoPage.selectItemInDropdownByID(driver, "personal_cmbMarital", editEmpMaritalStatus);
-
-        log.info("Personal_Details_03 - Step 13: Select new value in 'Nationality' dropdown");
-        myInfoPage.selectItemInDropdownByID(driver, "personal_cmbNation", editEmpNationality);
-
+//        log.info("Personal_Details_03 - Step 11: Select new value in 'Gender' radio button");
+//        myInfoPage.clickToRadioByLabel(driver, editEmpGender);
+//
+//        log.info("Personal_Details_03 - Step 12: Select new value in 'Marital Status' dropdown");
+//        myInfoPage.selectItemInDropdownByID(driver, "personal_cmbMarital", editEmpMaritalStatus);
+//
+//        log.info("Personal_Details_03 - Step 13: Select new value in 'Nationality' dropdown");
+//        myInfoPage.selectItemInDropdownByID(driver, "personal_cmbNation", editEmpNationality);
+//
         log.info("Personal_Details_03 - Step 14: Click to 'Save' button at 'Personal Details' form");
         myInfoPage.clickToButtonByID(driver, "btnSave");
 
@@ -187,17 +183,17 @@ public class Level_20_Data_Test_IV_Data_Driven extends BaseTest {
         log.info("Personal_Details_03 - Step 17: Verify 'Last Name' textbox is updated successfully");
         verifyEquals(myInfoPage.getTextboxValueByID(driver, "personal_txtEmpLastName"), employeeData.getEditLastName());
 
-        log.info("Personal_Details_03 - Step 18: Verify 'Gender' radio button is updated successfully");
-        verifyTrue(myInfoPage.isRadioButtonSelectedByLabel(driver, editEmpGender));
-
-        log.info("Personal_Details_03 - Step 19: Verify 'Marital Status' dropdown is updated successfully");
-        verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "personal_cmbMarital"), editEmpMaritalStatus);
-
-        log.info("Personal_Details_03 - Step 20: Verify 'Nationality' dropdown is updated successfully");
-        verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "personal_cmbNation"), editEmpNationality);
-
-        log.info("Personal_Details_03 - Step 21: Verify 'Employee Id' textbox value is correct");
-        verifyEquals(myInfoPage.getTextboxValueByID(driver, "personal_txtEmployeeId"), employeeID);
+//        log.info("Personal_Details_03 - Step 18: Verify 'Gender' radio button is updated successfully");
+//        verifyTrue(myInfoPage.isRadioButtonSelectedByLabel(driver, editEmpGender));
+//
+//        log.info("Personal_Details_03 - Step 19: Verify 'Marital Status' dropdown is updated successfully");
+//        verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "personal_cmbMarital"), editEmpMaritalStatus);
+//
+//        log.info("Personal_Details_03 - Step 20: Verify 'Nationality' dropdown is updated successfully");
+//        verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "personal_cmbNation"), editEmpNationality);
+//
+//        log.info("Personal_Details_03 - Step 21: Verify 'Employee Id' textbox value is correct");
+//        verifyEquals(myInfoPage.getTextboxValueByID(driver, "personal_txtEmployeeId"), employeeID);
     }
 //    @Test
     public void Employee_04_Contact_Details() {

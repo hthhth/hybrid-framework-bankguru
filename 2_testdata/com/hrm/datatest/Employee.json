@@ -1,11 +1,11 @@
 {
-  "firstname": "Harry",
+  "firstname": "Harryyyy",
   "lastname": "Kane",
-  "username": "harrykane",
+  "fullname": "Harryyyy Kane",
+  "username": "harryyyykane",
   "password": "12345678",
-  "fullname": "Harry Kane",
   "ContactDetails": {
-    "editFirstName": "Jerry",
-    "editLastName": "Shaw"
+    "editFirstName": "John",
+    "editLastName": "Doer"
   }
 }
