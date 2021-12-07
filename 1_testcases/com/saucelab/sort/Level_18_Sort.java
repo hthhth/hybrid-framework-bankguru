@@ -6,13 +6,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pabeObjects.saucelab.InventoryPageObject;
-import pabeObjects.saucelab.LoginPageObject;
-import pabeObjects.saucelab.PageGenerator;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import pageObjects.saucelab.InventoryPageObject;
+import pageObjects.saucelab.LoginPageObject;
+import pageObjects.saucelab.PageGenerator;
 
 public class Level_18_Sort extends BaseTest {
     WebDriver driver;

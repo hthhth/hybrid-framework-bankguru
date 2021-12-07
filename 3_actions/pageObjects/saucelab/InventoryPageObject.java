@@ -1,4 +1,4 @@
-package pabeObjects.saucelab;
+package pageObjects.saucelab;
 
 import commons.BasePage;
 import org.openqa.selenium.WebDriver;

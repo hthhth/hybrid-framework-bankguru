@@ -8,6 +8,7 @@
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
         <listener class-name="commons.MethodListener" />
         <listener class-name="reportConfig.ReportNGListener" />
+        <listener class-name="retryConfig.RetryListener" />
         <!--        <listener class-name="reportConfig.ExtentTestListener" />-->
         <!--        <listener class-name="reportConfig.AllureTestListener" />-->
 
@@ -30,8 +31,8 @@
     <test name="Run on CHROME">
         <parameter name="browser" value="chrome" />
         <classes>
-<!--            <class name="com.hrm.employee.Level_16_Live_Coding" />-->
-            <class name="com.hrm.employee.Level_20_Data_Test_IV_Data_Driven" />
+            <class name="com.hrm.employee.Level_16_Live_Coding" />
+<!--            <class name="com.hrm.employee.Level_20_Data_Test_IV_Data_Driven" />-->
         </classes>
     </test>
 
