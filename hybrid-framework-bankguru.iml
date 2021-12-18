@@ -24,5 +24,6 @@
     <orderEntry type="library" name="libFaker" level="project" />
     <orderEntry type="library" name="libJackson" level="project" />
     <orderEntry type="library" name="libOwner" level="project" />
+    <orderEntry type="library" name="libDatabase" level="project" />
   </component>
 </module>
