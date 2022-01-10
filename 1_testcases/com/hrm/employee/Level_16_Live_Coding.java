@@ -3,7 +3,6 @@ package com.hrm.employee;
 import commons.BaseTest;
 import commons.GlobalConstants;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -19,11 +18,11 @@ public class Level_16_Live_Coding extends BaseTest {
     String editEmpFirstName, editEmpLastName, editEmpGender, editEmpMaritalStatus, editEmpNationality;
     String avatarFilePath = GlobalConstants.UPLOAD_FOLDER_PATH + "Star.jpg";
 
-    @Parameters({"browser", "url"})
+    @Parameters({"browser", "url", "ipAddress", "port"})
     @BeforeClass
-    public void beforeClass(String browserName, String appURL) {
+    public void beforeClass(String browserName, String appURL, String ipAddress, String port) {
         log.info("Pre-Condition - Step 01: Open browser '" + browserName + "' and navigate to '" + appURL + "'");
-        driver = getBrowserDriver(browserName, appURL);
+        driver = getBrowserDriver(browserName, appURL, ipAddress, port);
         loginPage = PageGenerator.getLoginPage(driver);
 
         adminUserName = "Admin";
