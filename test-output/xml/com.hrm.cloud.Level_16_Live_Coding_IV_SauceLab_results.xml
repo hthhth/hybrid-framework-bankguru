@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Firefox"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="56.988">
+  <properties />
+  
+  
+            <testcase name="Employee_01_Add_New_Employee" time="56.988" classname="com.hrm.cloud.Level_16_Live_Coding_IV_SauceLab" />
+      
+</testsuite>

@@ -1,0 +1,7 @@
+[INFO ] [2022-01-17 15:31:38,612] Pre-Condition - Step 02: Login with Admin role
+[INFO ] [2022-01-17 15:31:45,157] Add_New_01 - Step 01: Open 'Employee List' page
+[INFO ] [2022-01-17 15:32:27,840] Post-Condition: Close browser 'Firefox'
+[INFO ] [2022-01-17 15:32:40,069] Pre-Condition - Step 02: Login with Admin role
+[INFO ] [2022-01-17 15:32:47,318] Add_New_01 - Step 01: Open 'Employee List' page
+[INFO ] [2022-01-17 15:33:31,216] Post-Condition: Close browser 'Safari'
+[INFO ] [2022-01-17 15:33:31,221] OS name = windows 7

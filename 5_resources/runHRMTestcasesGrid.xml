@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HRM">
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/" />
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+        <listener class-name="commons.MethodListener" />
+        <listener class-name="reportConfig.ReportNGListener" />
+<!--        <listener class-name="retryConfig.RetryListener" />-->
+        <!--        <listener class-name="reportConfig.ExtentTestListener" />-->
+        <!--        <listener class-name="reportConfig.AllureTestListener" />-->
+
+    </listeners>
+
+    <test name="Run on Firefox">
+        <parameter name="browser" value="firefox" />
+        <parameter name="ipAddress" value="192.168.20.2"></parameter>
+        <parameter name="port" value="5555"></parameter>
+        <classes>
+            <class name="com.hrm.cloud.Level_16_Live_Coding_II_Grid" />
+        </classes>
+    </test>
+
+    <test name="Run on CHROME">
+        <parameter name="browser" value="chrome" />
+        <parameter name="ipAddress" value="192.168.20.2"></parameter>
+        <parameter name="port" value="5555"></parameter>
+        <classes>
+            <class name="com.hrm.cloud.Level_16_Live_Coding_II_Grid" />
+<!--            <class name="com.hrm.employee.Level_20_Data_Test_IV_Data_Driven" />-->
+        </classes>
+    </test>
+
+</suite>

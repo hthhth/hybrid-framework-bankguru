@@ -1,4 +1,4 @@
-package com.hrm.employee;
+package com.hrm.cloud;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
@@ -9,7 +9,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.hrm.*;
 
-public class Level_16_Live_Coding extends BaseTest {
+public class Level_16_Live_Coding_II_Grid extends BaseTest {
     WebDriver driver;
     String employeeID;
     String statusValue;
@@ -18,11 +18,11 @@ public class Level_16_Live_Coding extends BaseTest {
     String editEmpFirstName, editEmpLastName, editEmpGender, editEmpMaritalStatus, editEmpNationality;
     String avatarFilePath = GlobalConstants.UPLOAD_FOLDER_PATH + "Star.jpg";
 
-    @Parameters({"browser", "url"})
+    @Parameters({"browser", "url", "ipAddress", "port"})
     @BeforeClass
-    public void beforeClass(String browserName, String appURL) {
+    public void beforeClass(String browserName, String appURL, String ipAddress, String port) {
         log.info("Pre-Condition - Step 01: Open browser '" + browserName + "' and navigate to '" + appURL + "'");
-        driver = getBrowserDriver(browserName, appURL);
+        driver = getBrowserDriver(browserName, appURL, ipAddress, port);
         loginPage = PageGenerator.getLoginPage(driver);
 
         adminUserName = "Admin";

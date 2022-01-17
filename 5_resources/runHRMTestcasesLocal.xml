@@ -8,7 +8,7 @@
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
         <listener class-name="commons.MethodListener" />
         <listener class-name="reportConfig.ReportNGListener" />
-        <listener class-name="retryConfig.RetryListener" />
+<!--        <listener class-name="retryConfig.RetryListener" />-->
         <!--        <listener class-name="reportConfig.ExtentTestListener" />-->
         <!--        <listener class-name="reportConfig.AllureTestListener" />-->
 
@@ -30,8 +30,6 @@
 
     <test name="Run on CHROME">
         <parameter name="browser" value="chrome" />
-        <parameter name="ipAddress" value="192.168.20.2"></parameter>
-        <parameter name="port" value="5555"></parameter>
         <classes>
             <class name="com.hrm.employee.Level_16_Live_Coding" />
 <!--            <class name="com.hrm.employee.Level_20_Data_Test_IV_Data_Driven" />-->

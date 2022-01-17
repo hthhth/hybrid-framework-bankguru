@@ -217,6 +217,108 @@ public class BaseTest {
         return driver;
     }
 
+    protected WebDriver getBrowserDriverBrowserStack(String browserName, String appURL, String osName, String osVersion){
+        DesiredCapabilities capability = new DesiredCapabilities();
+        capability.setCapability("os", osName);
+        capability.setCapability("os_version", osVersion);
+        capability.setCapability("browser", browserName);
+        capability.setCapability("browser_version", "latest");
+        capability.setCapability("browserstack.debug", "true");
+        capability.setCapability("project", "HRM");
+        capability.setCapability("resolution", "1920x1080");
+        capability.setCapability("name", "Run on " + osName + " " + osVersion + " and " + browserName);
+
+        try {
+            driver = new RemoteWebDriver(new URL(GlobalConstants.BROWSER_STACK_URL), capability);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        driver.get(appURL);
+//        driver.get(getEnvironmentValue(appURL));
+        return driver;
+    }
+    protected WebDriver getBrowserDriverSauceLab(String browserName, String appURL, String osName){
+        DesiredCapabilities capability = new DesiredCapabilities();
+        capability.setCapability("platformName", osName);
+        capability.setCapability("browserName", browserName);
+        capability.setCapability("browserVersion", "latest");
+        capability.setCapability("name", "Run on " + osName + " and " + browserName);
+
+        Map<String, Object> sauceOptions = new HashMap<>();
+        if (osName.contains("Windows")) {
+            sauceOptions.put("screenResolution", "1920x1080");
+        } else {
+            sauceOptions.put("screenResolution", "1920x1440");
+        }
+        capability.setCapability("sauce:options", sauceOptions);
+
+        try {
+            driver = new RemoteWebDriver(new URL(GlobalConstants.SAUCE_LAB_URL), capability);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        driver.get(appURL);
+//        driver.get(getEnvironmentValue(appURL));
+        return driver;
+    }
+
+    protected WebDriver getBrowserDriverCrossBrowserTesting(String browserName, String appURL, String osName){
+        DesiredCapabilities capability = new DesiredCapabilities();
+        capability.setCapability("platform", osName);
+        capability.setCapability("browserName", browserName);
+//        capability.setCapability("version", "latest");
+        capability.setCapability("record_video", "true");
+        if (osName.contains("Windows")) {
+            capability.setCapability("screenResolution", "1920x1080");
+        } else {
+            capability.setCapability("screenResolution", "2560x1600");
+        }
+        capability.setCapability("name", "Run on " + osName + " and " + browserName);
+
+        try {
+            driver = new RemoteWebDriver(new URL(GlobalConstants.CROSS_BROWSER_TESTING_URL), capability);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        driver.get(appURL);
+//        driver.get(getEnvironmentValue(appURL));
+        return driver;
+    }
+
+    protected WebDriver getBrowserDriverLambda(String browserName, String appURL, String osName){
+        DesiredCapabilities capability = new DesiredCapabilities();
+        capability.setCapability("platform", osName);
+        capability.setCapability("browserName", browserName);
+        capability.setCapability("version", "latest");
+        if (osName.contains("Windows")) {
+            capability.setCapability("screenResolution", "1920x1080");
+        } else {
+            capability.setCapability("screenResolution", "2560x1600");
+        }
+        capability.setCapability("name", "Run on " + osName + " and " + browserName);
+
+        try {
+            driver = new RemoteWebDriver(new URL(GlobalConstants.LAMBDA_URL), capability);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        driver.get(appURL);
+//        driver.get(getEnvironmentValue(appURL));
+        return driver;
+    }
+
     private String getEnvironmentValue(String environmentName) {
         ENVIRONMENT environment = ENVIRONMENT.valueOf(environmentName.toUpperCase());
         String envUrl;
@@ -241,6 +343,10 @@ public class BaseTest {
     protected String getRandomEmail(){
         Random rand = new Random();
         return "testing" + rand.nextInt(99999) + "@live.com";
+    }
+    protected int getRandomNumber(){
+        Random rand = new Random();
+        return rand.nextInt(99999);
     }
     private boolean checkTrue(boolean condition) {
         boolean pass = true;

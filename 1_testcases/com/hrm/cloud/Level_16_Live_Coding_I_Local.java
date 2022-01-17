@@ -1,4 +1,4 @@
-package com.hrm.employee;
+package com.hrm.cloud;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
@@ -9,7 +9,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.hrm.*;
 
-public class Level_16_Live_Coding extends BaseTest {
+public class Level_16_Live_Coding_I_Local extends BaseTest {
     WebDriver driver;
     String employeeID;
     String statusValue;
