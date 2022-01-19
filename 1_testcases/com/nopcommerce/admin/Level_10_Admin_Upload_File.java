@@ -24,7 +24,7 @@ public class Level_10_Admin_Upload_File extends BaseTest {
     @Parameters({"browser", "url"})
     @BeforeClass
     public void beforeClass(String browserName, String appURL){
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
         loginPage = PageGeneratorManager.getLoginPage(driver);
 
         loginPage.enterToEmailTextbox("admin@yourstore.com");

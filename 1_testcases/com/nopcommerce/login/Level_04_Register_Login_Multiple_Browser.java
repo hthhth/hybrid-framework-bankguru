@@ -20,7 +20,7 @@ public class Level_04_Register_Login_Multiple_Browser extends BaseTest {
     @Parameters({"browser", "url"})
     @BeforeClass
     public void beforeClass(String browserName, String appURL){
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
         emailAddress = getRandomEmail();
         password = "123456";
     }

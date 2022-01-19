@@ -23,7 +23,7 @@ public class Level_20_Data_Test_I_Into_Class extends BaseTest {
     @BeforeClass
     public void beforeClass(String browserName, String appURL) {
         log.info("Pre-Condition - Step 01: Open browser '" + browserName + "' and navigate to '" + appURL + "'");
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
         loginPage = PageGenerator.getLoginPage(driver);
         fakeData = DataUtil.getData();
 

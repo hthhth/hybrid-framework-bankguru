@@ -1,7 +1,45 @@
-[INFO ] [2022-01-17 15:31:38,612] Pre-Condition - Step 02: Login with Admin role
-[INFO ] [2022-01-17 15:31:45,157] Add_New_01 - Step 01: Open 'Employee List' page
-[INFO ] [2022-01-17 15:32:27,840] Post-Condition: Close browser 'Firefox'
-[INFO ] [2022-01-17 15:32:40,069] Pre-Condition - Step 02: Login with Admin role
-[INFO ] [2022-01-17 15:32:47,318] Add_New_01 - Step 01: Open 'Employee List' page
-[INFO ] [2022-01-17 15:33:31,216] Post-Condition: Close browser 'Safari'
-[INFO ] [2022-01-17 15:33:31,221] OS name = windows 7
+[INFO ] [2022-01-20 00:49:37,606] Pre-Condition - Step 02: Login with Admin role
+[INFO ] [2022-01-20 00:49:48,027] Add_New_01 - Step 01: Open 'Employee List' page
+[INFO ] [2022-01-20 00:49:54,909] Add_New_01 - Step 02: Click to 'Add' button
+[INFO ] [2022-01-20 00:49:58,825] Add_New_01 - Step 03: Enter valid info to 'First Name' textbox
+[INFO ] [2022-01-20 00:50:03,333] Add_New_01 - Step 04: Enter valid info to 'Last Name' textbox
+[INFO ] [2022-01-20 00:50:07,036] Add_New_01 - Step 05: Get value of 'Employee ID'
+[INFO ] [2022-01-20 00:50:10,663] Add_New_01 - Step 06: Click to 'Create Login Details' checkbox
+[INFO ] [2022-01-20 00:50:14,697] Add_New_01 - Step 07: Enter valid info to 'User Name' textbox
+[INFO ] [2022-01-20 00:50:17,982] Add_New_01 - Step 08: Enter valid info to 'Password' textbox
+[INFO ] [2022-01-20 00:50:22,430] Add_New_01 - Step 09: Enter valid info to 'Confirm Password' textbox
+[INFO ] [2022-01-20 00:50:25,144] Add_New_01 - Step 10: Select 'Enabled' value in 'Status' dropdown
+[INFO ] [2022-01-20 00:50:27,981] Add_New_01 - Step 11: Click to 'Save' button
+[INFO ] [2022-01-20 00:50:32,892] Add_New_01 - Step 12: Open 'Employee List' page
+[INFO ] [2022-01-20 00:50:39,617]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-20 00:50:39,622] Add_New_01 - Step 13: Enter valid info to 'Employee Name' textbox
+[INFO ] [2022-01-20 00:50:42,566] Add_New_01 - Step 14: Click to 'Search' button
+[INFO ] [2022-01-20 00:50:46,694]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-20 00:50:46,694] Add_New_01 - Step 15: Verify Employee Information displayed at 'Result Table'
+[INFO ] [2022-01-20 00:50:48,612]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-20 00:50:51,459]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-20 00:50:53,344]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-20 00:50:53,469] Post-Condition: Close browser 'Firefox'
+[INFO ] [2022-01-20 00:51:07,822] Pre-Condition - Step 02: Login with Admin role
+[INFO ] [2022-01-20 00:51:15,303] Add_New_01 - Step 01: Open 'Employee List' page
+[INFO ] [2022-01-20 00:51:21,947] Add_New_01 - Step 02: Click to 'Add' button
+[INFO ] [2022-01-20 00:51:28,300] Add_New_01 - Step 03: Enter valid info to 'First Name' textbox
+[INFO ] [2022-01-20 00:51:30,919] Add_New_01 - Step 04: Enter valid info to 'Last Name' textbox
+[INFO ] [2022-01-20 00:51:33,410] Add_New_01 - Step 05: Get value of 'Employee ID'
+[INFO ] [2022-01-20 00:51:34,949] Add_New_01 - Step 06: Click to 'Create Login Details' checkbox
+[INFO ] [2022-01-20 00:51:37,383] Add_New_01 - Step 07: Enter valid info to 'User Name' textbox
+[INFO ] [2022-01-20 00:51:40,221] Add_New_01 - Step 08: Enter valid info to 'Password' textbox
+[INFO ] [2022-01-20 00:51:43,196] Add_New_01 - Step 09: Enter valid info to 'Confirm Password' textbox
+[INFO ] [2022-01-20 00:51:46,743] Add_New_01 - Step 10: Select 'Enabled' value in 'Status' dropdown
+[INFO ] [2022-01-20 00:51:49,372] Add_New_01 - Step 11: Click to 'Save' button
+[INFO ] [2022-01-20 00:51:55,765] Add_New_01 - Step 12: Open 'Employee List' page
+[INFO ] [2022-01-20 00:52:01,792]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-20 00:52:01,793] Add_New_01 - Step 13: Enter valid info to 'Employee Name' textbox
+[INFO ] [2022-01-20 00:52:04,929] Add_New_01 - Step 14: Click to 'Search' button
+[INFO ] [2022-01-20 00:52:08,862]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-20 00:52:08,862] Add_New_01 - Step 15: Verify Employee Information displayed at 'Result Table'
+[INFO ] [2022-01-20 00:52:10,613]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-20 00:52:14,297]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-20 00:52:16,051]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-01-20 00:52:16,056] Post-Condition: Close browser 'Chrome'
+[INFO ] [2022-01-20 00:52:16,060] OS name = windows 7

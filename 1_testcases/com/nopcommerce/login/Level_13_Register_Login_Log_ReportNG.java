@@ -15,7 +15,7 @@ public class Level_13_Register_Login_Log_ReportNG extends BaseTest {
     @BeforeClass
     public void beforeClass(String browserName, String appURL){
         log.info("Pre-Condition: Open browser '" + browserName + "' and navigate to '" + appURL + "'");
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
         emailAddress = getRandomEmail();
         password = "123456";
     }

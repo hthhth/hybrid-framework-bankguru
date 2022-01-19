@@ -1,0 +1,5 @@
+package factoryEnvironment;
+
+public enum BROWSER {
+    CHROME, FIREFOX, IE, SAFARI, EDGE_LEGACY, EDGE_CHROMIUM, H_CHROME, H_FIREFOX, COC_COC, OPERA;
+}

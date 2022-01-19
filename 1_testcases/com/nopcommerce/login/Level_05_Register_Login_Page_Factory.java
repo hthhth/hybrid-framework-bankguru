@@ -1,6 +1,5 @@
 package com.nopcommerce.login;
 
-import commons.BasePageFactory;
 import commons.BaseTest;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -19,7 +18,7 @@ public class Level_05_Register_Login_Page_Factory extends BaseTest {
     @Parameters({"browser", "url"})
     @BeforeClass
     public void beforeClass(String browserName, String appURL){
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
         emailAddress = getRandomEmail();
         password = "123456";
     }

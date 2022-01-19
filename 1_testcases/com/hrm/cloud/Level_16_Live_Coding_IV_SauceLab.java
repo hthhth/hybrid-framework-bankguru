@@ -21,7 +21,7 @@ public class Level_16_Live_Coding_IV_SauceLab extends BaseTest {
     @Parameters({"browser", "url", "os"})
     @BeforeClass
     public void beforeClass(String browserName, String appURL, String osName) {
-        driver = getBrowserDriverSauceLab(browserName, appURL, osName);
+//        driver = getBrowserDriverSauceLab(browserName, appURL, osName);
         loginPage = PageGenerator.getLoginPage(driver);
 
         adminUserName = "Admin";

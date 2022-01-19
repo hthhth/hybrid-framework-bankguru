@@ -21,7 +21,7 @@ public class Level_06_Register_Login_Page_Generator extends BaseTest {
     @Parameters({"browser", "url"})
     @BeforeClass
     public void beforeClass(String browserName, String appURL){
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
         emailAddress = getRandomEmail();
         password = "123456";
         homePage = PageGeneratorManager.getHomePage(driver);

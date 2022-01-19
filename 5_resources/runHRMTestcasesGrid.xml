@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="HRM">
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/" />
+    <parameter name="envName" value="grid" />
+    <parameter name="serverName" value="dev" />
 
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter" />
@@ -19,7 +20,7 @@
         <parameter name="ipAddress" value="192.168.20.2"></parameter>
         <parameter name="port" value="5555"></parameter>
         <classes>
-            <class name="com.hrm.cloud.Level_16_Live_Coding_II_Grid" />
+            <class name="com.hrm.cloud.Level_16_Live_Coding_VII_All" />
         </classes>
     </test>
 
@@ -28,8 +29,7 @@
         <parameter name="ipAddress" value="192.168.20.2"></parameter>
         <parameter name="port" value="5555"></parameter>
         <classes>
-            <class name="com.hrm.cloud.Level_16_Live_Coding_II_Grid" />
-<!--            <class name="com.hrm.employee.Level_20_Data_Test_IV_Data_Driven" />-->
+            <class name="com.hrm.cloud.Level_16_Live_Coding_VII_All" />
         </classes>
     </test>
 

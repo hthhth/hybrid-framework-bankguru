@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="HRM">
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/" />
+    <parameter name="envName" value="sauceLab"></parameter>
+    <parameter name="serverName" value="dev"></parameter>
 
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter" />
@@ -19,7 +20,7 @@
         <parameter name="browser" value="Firefox" />
 <!--        <parameter name="browser_version" value="latest"></parameter>-->
         <classes>
-            <class name="com.hrm.cloud.Level_16_Live_Coding_IV_SauceLab" />
+            <class name="com.hrm.cloud.Level_16_Live_Coding_VII_All" />
         </classes>
     </test>
 
@@ -28,7 +29,7 @@
         <parameter name="browser" value="Chrome" />
 <!--        <parameter name="browser_version" value="latest"></parameter>-->
         <classes>
-            <class name="com.hrm.cloud.Level_16_Live_Coding_IV_SauceLab" />
+            <class name="com.hrm.cloud.Level_16_Live_Coding_VII_All" />
         </classes>
     </test>
 </suite>

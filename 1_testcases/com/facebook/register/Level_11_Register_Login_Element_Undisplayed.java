@@ -9,9 +9,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.facebook.PageGeneratorManager;
 import pageObjects.facebook.RegisterPageObject;
-import pageUIs.facebook.RegisterPageUI;
-
-import java.util.Random;
 
 public class Level_11_Register_Login_Element_Undisplayed extends BaseTest {
     WebDriver driver;
@@ -20,7 +17,7 @@ public class Level_11_Register_Login_Element_Undisplayed extends BaseTest {
     @Parameters({"browser", "url"})
     @BeforeClass
     public void beforeClass(String browserName, String appURL){
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
 
         registerPage = PageGeneratorManager.getRegisterPage(driver);
     }

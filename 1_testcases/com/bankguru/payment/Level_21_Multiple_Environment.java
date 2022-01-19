@@ -4,23 +4,27 @@ import commons.BaseTest;
 import environmentConfig.Environment;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class Level_21_Multiple_Environment extends BaseTest {
     WebDriver driver;
     Environment environment;
 
-    @Parameters({"browser", "url"})
+    @Parameters({"envName", "serverName", "browser", "ipAddress", "port", "os", "os_version"})
     @BeforeClass
-    public void beforeClass(String browserName, String appUrl) {
-        ConfigFactory.setProperty("env", appUrl);
-
+    public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome")  String browser, @Optional("localhost")  String ipAddress,
+                            @Optional("4444")  String port, @Optional("Windows")  String osName, @Optional("10")  String osVersion) {
         environment = ConfigFactory.create(Environment.class);
+        driver = getBrowserDriver(envName, environment.appUrl(), browser, ipAddress, port, osName, osVersion);
 
-        driver = getBrowserDriver(browserName, environment.appUrl());
+//    @Parameters({"browser", "url"})
+//    @BeforeClass
+//    public void beforeClass(String browserName, String appUrl) {
+//        ConfigFactory.setProperty("env", appUrl);
+
+//        environment = ConfigFactory.create(Environment.class);
+
+//        driver = getBrowserDriverLocal(browserName, environment.appUrl());
         System.out.println(driver.getCurrentUrl());
     }
     @Test

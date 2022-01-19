@@ -1,7 +1,6 @@
 package com.jquery.datatable;
 
 import commons.BaseTest;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -19,7 +18,7 @@ public class Level_09_DataTable extends BaseTest {
     @Parameters({"browser", "url"})
     @BeforeClass
     public void beforeClass(String browserName, String appURL){
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
         homePage = PageGeneratorManager.getHomePage(driver);
     }
 

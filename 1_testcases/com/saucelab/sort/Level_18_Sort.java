@@ -18,7 +18,7 @@ public class Level_18_Sort extends BaseTest {
     @Parameters({"browser", "url"})
     @BeforeClass
     public void beforeClass(String browserName, String appURL){
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
         loginPage = PageGenerator.getLoginPage(driver);
         loginPage.enterToUsernameTextbox("standard_user");
         loginPage.enterToPasswordTextbox("secret_sauce");

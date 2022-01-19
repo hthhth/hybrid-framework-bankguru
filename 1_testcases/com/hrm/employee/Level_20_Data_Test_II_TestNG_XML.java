@@ -8,7 +8,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.hrm.*;
-import utilities.DataUtil;
 
 public class Level_20_Data_Test_II_TestNG_XML extends BaseTest {
     WebDriver driver;
@@ -19,7 +18,7 @@ public class Level_20_Data_Test_II_TestNG_XML extends BaseTest {
     @BeforeClass
     public void beforeClass(String browserName, String appURL, String adminUserName, String adminPassword) {
         log.info("Pre-Condition - Step 01: Open browser '" + browserName + "' and navigate to '" + appURL + "'");
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
         loginPage = PageGenerator.getLoginPage(driver);
 
         log.info("Pre-Condition - Step 02: Login with Admin role");

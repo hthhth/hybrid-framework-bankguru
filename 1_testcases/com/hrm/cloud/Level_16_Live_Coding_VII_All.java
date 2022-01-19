@@ -3,13 +3,10 @@ package com.hrm.cloud;
 import commons.BaseTest;
 import commons.GlobalConstants;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pageObjects.hrm.*;
 
-public class Level_16_Live_Coding_III_BrowserStack extends BaseTest {
+public class Level_16_Live_Coding_VII_All extends BaseTest {
     WebDriver driver;
     String employeeID;
     String statusValue;
@@ -18,10 +15,11 @@ public class Level_16_Live_Coding_III_BrowserStack extends BaseTest {
     String editEmpFirstName, editEmpLastName, editEmpGender, editEmpMaritalStatus, editEmpNationality;
     String avatarFilePath = GlobalConstants.UPLOAD_FOLDER_PATH + "Star.jpg";
 
-    @Parameters({"browser", "url", "os", "os_version"})
+    @Parameters({"envName", "serverName", "browser", "ipAddress", "port", "os", "os_version"})
     @BeforeClass
-    public void beforeClass(String browserName, String appURL, String osName, String osVersion) {
-//        driver = getBrowserDriverBrowserStack(browserName, appURL, osName, osVersion);
+    public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome")  String browser, @Optional("localhost")  String ipAddress,
+                            @Optional("4444")  String port, @Optional("Windows")  String osName, @Optional("10")  String osVersion) {
+        driver = getBrowserDriver(envName, serverName, browser, ipAddress, port, osName, osVersion);
         loginPage = PageGenerator.getLoginPage(driver);
 
         adminUserName = "Admin";
@@ -46,7 +44,7 @@ public class Level_16_Live_Coding_III_BrowserStack extends BaseTest {
     }
 
     @Test
-    public void Employee_01_Add_New_Employee() {
+    public void Employee_01_Add_New_Employee() throws InterruptedException {
         log.info("Add_New_01 - Step 01: Open 'Employee List' page");
         dashboardPage.openSubMenuPage(driver, "PIM", "Employee List");
         showBrowserConsoleLogs(driver);

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="HRM">
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/" />
-
+<!--    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/" />-->
+    <parameter name="envName" value="browserStack"></parameter>
+    <parameter name="serverName" value="dev"></parameter>
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter" />
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
@@ -14,13 +15,32 @@
 
     </listeners>
 
+<!--    <test name="Run on Firefox">-->
+<!--        <parameter name="os" value="Windows" />-->
+<!--        <parameter name="os_version" value="10"></parameter>-->
+<!--        <parameter name="browser" value="Firefox" />-->
+<!--&lt;!&ndash;        <parameter name="browser_version" value="latest"></parameter>&ndash;&gt;-->
+<!--        <classes>-->
+<!--            <class name="com.hrm.cloud.Level_16_Live_Coding_III_BrowserStack" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Run on Chrome">-->
+<!--        <parameter name="os" value="OS X" />-->
+<!--        <parameter name="os_version" value="Big Sur"></parameter>-->
+<!--        <parameter name="browser" value="Chrome" />-->
+<!--&lt;!&ndash;        <parameter name="browser_version" value="latest"></parameter>&ndash;&gt;-->
+<!--        <classes>-->
+<!--            <class name="com.hrm.cloud.Level_16_Live_Coding_III_BrowserStack" />-->
+<!--        </classes>-->
+<!--    </test>-->
     <test name="Run on Firefox">
         <parameter name="os" value="Windows" />
         <parameter name="os_version" value="10"></parameter>
         <parameter name="browser" value="Firefox" />
 <!--        <parameter name="browser_version" value="latest"></parameter>-->
         <classes>
-            <class name="com.hrm.cloud.Level_16_Live_Coding_III_BrowserStack" />
+            <class name="com.hrm.cloud.Level_16_Live_Coding_VII_All" />
         </classes>
     </test>
 
@@ -30,7 +50,7 @@
         <parameter name="browser" value="Chrome" />
 <!--        <parameter name="browser_version" value="latest"></parameter>-->
         <classes>
-            <class name="com.hrm.cloud.Level_16_Live_Coding_III_BrowserStack" />
+            <class name="com.hrm.cloud.Level_16_Live_Coding_VII_All" />
         </classes>
     </test>
 </suite>

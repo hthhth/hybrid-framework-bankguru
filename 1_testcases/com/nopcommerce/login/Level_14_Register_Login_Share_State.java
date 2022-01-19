@@ -17,7 +17,7 @@ public class Level_14_Register_Login_Share_State extends BaseTest {
     @BeforeClass
     public void beforeClass(String browserName, String appURL) throws InterruptedException {
         log.info("Pre-Condition789: Open browser '" + browserName + "' and navigate to '" + appURL + "'");  //4
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
         homePage = PageGeneratorManager.getHomePage(driver);
 
         log.info("Pre-Condition - Step 01: Click to Login link");  //7

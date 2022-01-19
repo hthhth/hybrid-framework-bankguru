@@ -22,7 +22,7 @@ public class Level_16_Live_Coding_II_Grid extends BaseTest {
     @BeforeClass
     public void beforeClass(String browserName, String appURL, String ipAddress, String port) {
         log.info("Pre-Condition - Step 01: Open browser '" + browserName + "' and navigate to '" + appURL + "'");
-        driver = getBrowserDriver(browserName, appURL, ipAddress, port);
+//        driver = getBrowserDriverGrid(browserName, appURL, ipAddress, port);
         loginPage = PageGenerator.getLoginPage(driver);
 
         adminUserName = "Admin";

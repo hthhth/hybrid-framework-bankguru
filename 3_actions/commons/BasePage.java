@@ -660,6 +660,7 @@ public class BasePage {
     public void clickToButtonByID(WebDriver driver, String buttonIDName){
         waitForElementClickable(driver, BasePageUI.BUTTON_BY_ID, buttonIDName);
         clickToElement(driver, BasePageUI.BUTTON_BY_ID, buttonIDName);
+        sleepInSeconds(1);
         if (driver.toString().contains("internet explorer")){
             sleepInSeconds(3);
         }

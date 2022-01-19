@@ -19,7 +19,7 @@ public class Level_22_Database_UI extends BaseTest {
     @BeforeClass
     public void beforeClass(String browserName, String appURL) {
         log.info("Pre-Condition - Step 01: Open browser '" + browserName + "' and navigate to '" + appURL + "'");
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
         loginPage = PageGenerator.getLoginPage(driver);
 
         adminUserName = "Admin";

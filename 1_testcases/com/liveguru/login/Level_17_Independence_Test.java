@@ -17,7 +17,7 @@ public class Level_17_Independence_Test extends BaseTest {
     @Parameters({"browser", "url"})
     @BeforeMethod
     public void beforeMethod(String browserName, String appURL){
-        driver = getBrowserDriver(browserName, appURL);
+//        driver = getBrowserDriverLocal(browserName, appURL);
 
         emailAddress = getRandomEmail();
         password = "123456";
